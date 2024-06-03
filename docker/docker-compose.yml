@@ -1,14 +1,16 @@
 services:
   postgres:
     image: postgres:latest
-    ports:
-      - 5433:5432
+    container_name: gymapp-postgres
+    restart: always
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=123
-      - POSTGRES_DB=gymapp
+      POSTGRES_USER: gymapp_user
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DATABASE: gymapp_db
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
 
 volumes:
   postgres_data:

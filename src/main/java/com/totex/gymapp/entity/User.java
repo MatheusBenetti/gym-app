@@ -41,6 +41,8 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Workout> workouts;
 
+    public User() {}
+
     // Getters and setters
     public Long getId() {
         return id;

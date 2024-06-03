@@ -28,6 +28,8 @@ public class Workout {
     @OneToMany(mappedBy = "workout", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Exercise> exercises;
 
+    public Workout() {}
+
     // Getters and setters
     public Long getId() {
         return id;

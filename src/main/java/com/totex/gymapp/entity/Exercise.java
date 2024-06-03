@@ -20,6 +20,8 @@ public class Exercise {
     @JoinColumn(name = "workout_id")
     private Workout workout;
 
+    public Exercise() {}
+
     // Getters and setters
     public Long getId() {
         return id;

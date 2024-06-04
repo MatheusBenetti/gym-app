@@ -22,6 +22,11 @@ public class Exercise {
 
     public Exercise() {}
 
+    public Exercise(String exerciseName, String description) {
+        this.exerciseName = exerciseName;
+        this.description = description;
+    }
+
     // Getters and setters
     public Long getId() {
         return id;

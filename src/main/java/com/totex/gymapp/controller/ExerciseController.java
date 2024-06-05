@@ -17,7 +17,7 @@ public class ExerciseController {
         this.exerciseService = exerciseService;
     }
 
-    @PostMapping("/exercise")
+    @PostMapping("/exercises")
     public ResponseEntity<Exercise> createExercise(@RequestBody CreateExerciseDto dto) {
         var exercise = exerciseService.createExercise(dto);
         return ResponseEntity.ok(exercise);

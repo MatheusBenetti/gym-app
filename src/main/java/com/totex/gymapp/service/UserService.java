@@ -12,7 +12,7 @@ public class UserService {
     }
 
     public User createUser(CreateUserDto dto) {
-        var user = userRepository.findUserByFullName(dto.fullName());
+        var user = userRepository.findUserByEmail(dto.email());
 
         if (user.isPresent()) {
             // TODO: create new exception class

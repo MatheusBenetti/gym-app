@@ -43,6 +43,17 @@ public class User {
 
     public User() {}
 
+    public User(String fullName, String email, String password, String objective, String phoneNumber, float height, float weight) {
+        this.fullName = fullName;
+        this.email = email;
+        this.password = password;
+        this.objective = objective;
+        this.phoneNumber = phoneNumber;
+        this.height = height;
+        this.weight = weight;
+
+    }
+
     // Getters and setters
     public Long getId() {
         return id;

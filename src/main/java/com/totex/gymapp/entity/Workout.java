@@ -30,6 +30,10 @@ public class Workout {
 
     public Workout() {}
 
+    public Workout(String name) {
+        this.name = name;
+    }
+
     // Getters and setters
     public Long getId() {
         return id;
